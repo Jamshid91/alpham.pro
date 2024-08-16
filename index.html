@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="pagecrm">
+
+    <!-- header -->
+    <header class="header">
+        <div class="header-box">
+            <a href="./index.html" class="logo">
+                <img src="assets/images/svg/logo-white.svg" alt="" class="logo-img">
+            </a>
+            <div class="header-middle">
+                <ul class="header-nav">
+                    <li class="nav-item"><a href="#">услуги</a></li>
+                    <li class="nav-item"><a href="#">кейсы</a></li>
+                    <li class="nav-item"><a href="#">ЕЩЁ</a></li>
+                </ul>
+                <div class="search-btn">
+                    <img src="assets/images/svg/search.svg" alt="">
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="tel:88124095222" class="header-call">
+                    <img src="assets/images/svg/call.svg" alt="">
+                    <span>8 812 409-52-22</span>
+                </a>
+                <button class="ask-question btn">
+                    <span>задать вопрос</span>
+                    <img src="assets/images/svg/up2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sticky-btns">
+        <ul class="sticky-btns-list">
+          <li class="sticky-btn" data-toggle="modal" data-target="#modal-widjet">
+            <svg width="15" height="28" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.04142 21.6667C8.37476 21.6667 7.81254 21.4306 7.35476 20.9583C6.89698 20.4861 6.69531 19.9306 6.74976 19.2917C6.83309 18.125 7.11087 17.1111 7.58309 16.25C8.05531 15.3889 8.80532 14.5 9.83309 13.5833C10.972 12.5833 11.8403 11.715 12.4381 10.9783C13.0359 10.2417 13.3342 9.40167 13.3331 8.45833C13.3331 7.31944 12.9514 6.375 12.1881 5.625C11.4248 4.875 10.362 4.5 8.99976 4.5C8.11087 4.5 7.35365 4.68778 6.72809 5.06333C6.10254 5.43889 5.59587 5.90389 5.20809 6.45833C4.8192 7.01389 4.34031 7.38889 3.77143 7.58333C3.20254 7.77778 2.65365 7.76389 2.12476 7.54167C1.48587 7.26389 1.04865 6.80555 0.813092 6.16667C0.577537 5.52778 0.62587 4.93056 0.958093 4.375C1.76365 3.125 2.84698 2.08333 4.20809 1.25C5.5692 0.416667 7.16643 0 8.99976 0C11.9164 0 14.1598 0.812222 15.7298 2.43667C17.2998 4.06111 18.0842 6.01278 18.0831 8.29167C18.0831 9.68056 17.7848 10.8683 17.1881 11.855C16.5914 12.8417 15.6536 13.9594 14.3748 15.2083C13.4303 16.0972 12.7636 16.8194 12.3748 17.375C11.9859 17.9306 11.722 18.5694 11.5831 19.2917C11.472 19.9861 11.1803 20.5556 10.7081 21C10.2359 21.4444 9.68031 21.6667 9.04142 21.6667ZM8.99976 31.6667C8.08309 31.6667 7.29809 31.34 6.64476 30.6867C5.99143 30.0333 5.66531 29.2489 5.66643 28.3333C5.66643 27.4167 5.99309 26.6317 6.64643 25.9783C7.29976 25.325 8.0842 24.9989 8.99976 25C9.91643 25 10.7014 25.3267 11.3548 25.98C12.0081 26.6333 12.3342 27.4178 12.3331 28.3333C12.3331 29.25 12.0064 30.035 11.3531 30.6883C10.6998 31.3417 9.91531 31.6678 8.99976 31.6667Z" fill="#F8EDFF"></path>
+              </svg>
+          </li>
+          <li class="sticky-btn" data-toggle="modal" data-target="#modal-callback">
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.25 30C24.6667 30 21.1739 29.2011 17.7717 27.6033C14.3694 26.0056 11.3556 23.8944 8.73 21.27C6.10444 18.6456 3.99333 15.6317 2.39667 12.2283C0.8 8.825 0.00111111 5.33222 0 1.75C0 1.25 0.166667 0.833333 0.5 0.5C0.833333 0.166667 1.25 0 1.75 0H8.5C8.88889 0 9.23611 0.125 9.54167 0.375C9.84722 0.625 10.0278 0.944444 10.0833 1.33333L11.1667 7.16667C11.2222 7.55556 11.215 7.91 11.145 8.23C11.075 8.55 10.9156 8.83444 10.6667 9.08333L6.66667 13.1667C7.83333 15.1667 9.29167 17.0417 11.0417 18.7917C12.7917 20.5417 14.7222 22.0556 16.8333 23.3333L20.75 19.4167C21 19.1667 21.3267 18.9794 21.73 18.855C22.1333 18.7306 22.5289 18.6956 22.9167 18.75L28.6667 19.9167C29.0556 20 29.375 20.1878 29.625 20.48C29.875 20.7722 30 21.1122 30 21.5V28.25C30 28.75 29.8333 29.1667 29.5 29.5C29.1667 29.8333 28.75 30 28.25 30Z" fill="#F8EDFF"></path>
+              </svg>
+          </li>
+        </ul>
+    </div>
+
+    <!-- main -->
+    <main class="pagecrm_main">
+        <div class="head-page">
+            <a href="./index.html" class="page-link">Главная</a>
+            <img src="assets/images/svg/icon-next.svg" alt="">
+            <a href="./index.html" class="page-link">Услуги Альфа маркетинг</a>
+            <img src="assets/images/svg/icon-next.svg" alt="">
+            <span class="page-active">CRM</span>
+        </div>
+
+        <section class="pagecrm_crm">
+            <div class="container">
+                <h1 class="pagecrm_crm-title">CRM</h1>
+                <img src="assets/images/webp/block1.webp" alt="" class="pagecrm_crm-img">
+                <button class="pagecrm_crm-btn btn">оставить заявку</button>
+            </div>
+        </section>
+
+        <section class="pagecrm_control">
+            <div class="container">
+                <h2 class="section__title">Управление бизнес-процессами</h2>
+                <div class="control-box">
+                    <div class="control-item">
+                        <img src="assets/images/svg/c1.svg" alt="" class="control-img">
+                        <p class="control-text">Повышение эффективности отдела продаж</p>
+                    </div>
+                    <div class="control-item">
+                        <img src="assets/images/svg/c2.svg" alt="" class="control-img">
+                        <p class="control-text">Удобное общениес заказчиками</p>
+                    </div>
+                    <div class="control-item">
+                        <img src="assets/images/svg/c3.svg" alt="" class="control-img">
+                        <p class="control-text">Лучшие CRM-системы</p>
+                    </div>
+                    <div class="control-item">
+                        <img src="assets/images/svg/c4.svg" alt="" class="control-img">
+                        <p class="control-text">Карточка с историей событий для каждого заказчика</p>
+                    </div>
+                </div>
+
+                <div class="control-func">
+                    <div class="func-item">
+                        <div class="func-img">
+                            <img src="assets/images/webp/c1.webp" alt="">
+                        </div>
+                        <div class="func-list">
+                            <p class="list-title">Функции:</p>
+                            <ul class="list-info">
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>CRM</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>Интеграция с другими сервисами</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>Онлайн-бот</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="func-item">
+                        <div class="func-img">
+                            <img src="assets/images/webp/c2.webp" alt="">
+                        </div>
+                        <div class="func-list">
+                            <p class="list-title">Функции:</p>
+                            <ul class="list-info">
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>CRM</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>Корпоративный портал</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>Онлайн офис</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/check-circle.svg" alt="">
+                                    <span>Интеграция с другими сервисами и т.д.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="control-form">
+                    <h2 class="form-title">Оставить заявку</h2>
+                    <p class="form-subtitle">Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
+                    <div class="input-box">
+                        <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="form__inp phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="select-box">
+                        <div class="select-head">
+                            <span class="active">Выберите систему</span>
+                            <img src="assets/images/svg/arrow.svg" alt="">
+                        </div>
+                        <ul class="select-options">
+                            <li class="option">amoCRM</li>
+                            <li class="option">Битрикс24</li>
+                            <li class="option">Нужна помощь в выборе</li>
+                        </ul>
+                    </div>
+                    <div class="text-box">
+                        <textarea class="form__text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"></textarea>
+                    </div>
+
+                    <button class="form-btn btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="pagecrm_useful">
+            <div class="container">
+                <h2 class="section__title">КОМУ ПОЛЕЗНА CRM</h2>
+                <div class="useful-box">
+                    <img src="assets/images/webp/useful-bg.webp" alt="" class="box-img">
+                    <ul class="useful-item">
+                        <li>
+                            <img src="assets/images/svg/Checkbox.svg" alt="">
+                            <span>Любому бизнесу, работающему
+                                с клиентской базой</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/svg/Checkbox.svg" alt="">
+                            <span>Бизнесу, управляющему ассортиментом</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/svg/Checkbox.svg" alt="">
+                            <span>Бизнесу, где есть задачи, планирование,
+                                отчетность и KPI</span>
+                        </li>
+                    </ul>
+                    <img src="assets/images/webp/useful.webp" alt="" class="useful-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="pagecrm_business">
+            <div class="container">
+                <h2 class="section__title">CRM В БИЗНЕСЕ</h2>
+                <p class="section__subtitle">Наши кейсы</p>
+                <div class="business-box">
+                    <div class="business-item">
+                        <div class="item-photo">
+                            <img src="assets/images/svg/bus1.svg" alt="">
+                            <span>г. Санкт-Петербург</span>
+                        </div>
+                        <div class="">
+                            <p class="item-title">“Пестовский Лесокомбинат”</p>
+                            <p class="item-text">Строительная компания</p>
+                            <p class="item-subtitle">Работают на платформе amoCRM</p>
+                            <a href="#" class="item-link btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="business-item">
+                        <div class="item-photo">
+                            <img src="assets/images/svg/bus2.svg" alt="">
+                            <span>Россия</span>
+                        </div>
+                        <div class="">
+                            <p class="item-title">Магазин “Mongol Store”</p>
+                            <p class="item-text">Одежда из натуральной шерсти</p>
+                            <p class="item-subtitle">Используют БитриксCRM</p>
+                            <a href="#" class="item-link btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagecrm_price">
+            <div class="container">
+                <h2 class="section__title">СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</h2>
+                <div class="price-box">
+                    <div class="price-item">
+                        <div class="item">
+                            <div class="item-head">
+                                <span>Подключение системы CRM</span>
+                                <span class="price-text">от 10 000 ₽</span>
+                            </div>
+                            <div class="item-check">
+                                <img src="assets/images/svg/check-circle.svg" alt="">
+                                <span>Покупка любого тарифа со скидкой</span>
+                            </div>
+                        </div>
+                        <button class="price-btn order_btn btn">
+                            <span>ЗАКАЗАТЬ</span>
+                            <img src="assets/images/svg/up.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="price-item">
+                        <div class="item">
+                            <div class="item-head">
+                                <span>Подключение системы CRM + настройка</span>
+                                <span class="price-text">от 15 000 ₽</span>
+                            </div>
+                            <div class="item-check">
+                                <img src="assets/images/svg/check-circle.svg" alt="">
+                                <span>Покупка любого тарифа со скидкой</span>
+                            </div>
+                            <div class="item-check">
+                                <img src="assets/images/svg/check-circle.svg" alt="">
+                                <span>Индивидуальная настройка системы</span>
+                            </div>
+                        </div>
+                        <button class="price-btn order_btn btn">
+                            <span>ЗАКАЗАТЬ</span>
+                            <img src="assets/images/svg/up.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="price-item">
+                        <div class="item">
+                            <div class="item-head">
+                                <span>Продление лицензий <br> amoCRM и Битрикс24</span>
+                                <span class="price-text">от 10 000 ₽</span>
+                            </div>
+                            <div class="item-check">
+                                <img src="assets/images/svg/check-circle.svg" alt="">
+                                <span>Возможность продления лицензий со скидкой от официальных цен</span>
+                            </div>
+                        </div>
+                        <button class="price-btn order_btn btn">
+                            <span>ЗАКАЗАТЬ</span>
+                            <img src="assets/images/svg/up.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagecrm_connection">
+            <div class="container">
+                <h2 class="connection__title">Заявка на подбор и подключение CRM-системы </h2>
+                <p class="section__subtitle">Проведем аудит, подготовим решение для вашего <br> бизнеса и рассчитаем стоимость </p>
+                <div class="connection-box">
+                    <form class="connection-form">
+                        <h3 class="form-title">Заполните форму</h3>
+                        <p class="form-subtitle">Оставьте свои контактные данные, мы свяжемся с Вами в течение 20 минут</p>
+                        <div class="input-box">
+                            <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="form__inp phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="select-box">
+                            <div class="select-head">
+                                <span class="active">Выберите систему</span>
+                                <img src="assets/images/svg/arrow-down.svg" alt="">
+                            </div>
+                            <ul class="select-options">
+                                <li class="option">amoCRM</li>
+                                <li class="option">Битрикс24</li>
+                                <li class="option">Нужна помощь в выборе</li>
+                            </ul>
+                        </div>
+    
+                        <button class="form-btn btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                    <img src="assets/images/webp/world.webp" alt="" class="world-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="pagecrm_partner">
+            <div class="container">
+                <h2 class="section__title">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+                <div class="partner-box">
+                    <ul class="partner-item">
+                        <li>
+                            <a href="#">
+                                <span>Битрикс24 (Управление бизнесом)</span>
+                                <img src="assets/images/svg/next.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>amoCRM (Управление бизнесом)</span>
+                                <img src="assets/images/svg/next.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/webp/partner.webp" alt="" class="partner-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="pagecrm_writeUS">
+            <div class="container">
+                <div class="writeUS-box">
+                    <div class="writeUS-info">
+                        <h2 class="writeUS-title">Напишите нам!</h2>
+                        <p class="writeUS-text">Заполните заявку и Мы свяжемся с Вами в течение 15 минут</p>
+                        <p class="writeUS-subtitle">Команда Alpha marketing</p>
+                    </div>
+                    <form class="writeUS-form">
+                        <div class="input-box">
+                            <input type="text" class="form__inp" placeholder="Имя" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="form__inp" placeholder="@Почта*" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="form__inp phone" placeholder="+7(___) ___-__-__*" required>
+                        </div>
+                        <div class="text-box">
+                            <textarea class="form__text" placeholder="Задать вопрос"></textarea>
+                        </div>
+
+                        <button class="form-btn btn">задать вопрос</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-item">
+                    <h3 class="item-title">Меню</h3>
+                    <ul class="item-nav">
+                        <li><a href="#">Услуги
+                            </a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">Ещё</a></li>
+                    </ul>
+                    <a href="./index.html" class="logo">
+                        <img src="assets/images/svg/logo-white.svg" alt="" class="logo-img">
+                    </a>
+                </div>
+                <div class="box-right">
+                    <div class="footer-item">
+                        <h3 class="item-title">Контакты</h3>
+                        <div class="item-info">
+                            <p>Санкт-Петербург <br> Заозёрная 8, к.2, офис 202</p>
+                            <p>Пн-Пт, 10:00 - 18:00</p>
+                            <a href="tel:88124095222">8 (812) 409-52-22</a>
+                            <a href="mailto:info@alpham.pro">info@alpham.pro</a>
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="social">
+                                <img src="assets/images/svg/vk.svg" alt="">
+                            </a>
+                            <a href="#" class="social">
+                                <img src="assets/images/svg/tg.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footert-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa18364c0fa526cff9c5c71ef9127d5907679471007cdf3cd6b2733db23a2d5ff&amp;source=constructor" width="500" height="400"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sub">
+                <p class="sub-text">© 2023 Альфа маркетинг</p>
+                <a class="sub-link" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="popUp popUp-form">
+        <div class="popUp-content">
+            <form class="popUp_form">
+                <h3 class="form-title">Форма для заполнения</h3>
+                <p class="form-subtitle">Оставьте свои контактные данные, мы свяжемся с Вами в течение 20 минут</p>
+                <div class="input-box">
+                    <input type="text" id="userName" class="form__inp" placeholder="Имя*" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="userEmail" class="form__inp phone" placeholder="@Почта*" required>
+                </div>
+                <button class="form-btn btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                <div class="check-box">
+                    <input type="checkbox" id="check" class="form__check">
+                    <div class="check-text">
+                        <label for="check">Нажимая на кнопку, я соглашаюсь с условиями</label>
+                        <a href="#">Политики конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popUp popUp-thanks">
+        <div class="popUp-content">
+            <button class="popUp-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.93934 16.9393C0.353553 17.5251 0.353553 18.4749 0.93934 19.0607C1.52513 19.6464 2.47487 19.6464 3.06066 19.0607L10 12.1213L16.9393 19.0607C17.5251 19.6465 18.4749 19.6465 19.0607 19.0607C19.6464 18.4749 19.6464 17.5251 19.0607 16.9393L12.1213 10L19.0607 3.06066C19.6464 2.47488 19.6464 1.52513 19.0607 0.93934C18.4749 0.353553 17.5251 0.353554 16.9393 0.93934L10 7.87868L3.06066 0.939342C2.47487 0.353556 1.52513 0.353556 0.93934 0.939342C0.353553 1.52513 0.353553 2.47488 0.93934 3.06066L7.87868 10L0.93934 16.9393Z" fill="white"/>
+                </svg>                    
+            </button>
+            <img src="assets/images/svg/check-big.svg" alt="" class="thanks-icon">
+            <h3 class="thanks-title">Ваша заявка успешно отправлена!</h3>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/mask.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/popUp.js"></script>
+</body>
+</html>
