@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body class="pagecrm">
 
@@ -33,6 +36,17 @@
                     <span>задать вопрос</span>
                     <img src="assets/images/svg/up2.svg" alt="">
                 </button>
+            </div>
+        </div>
+        <div class="header-mob">
+            <div class="menu-btn">
+                <img src="assets/images/svg/burger.svg" alt="">
+            </div>
+            <div class="search">
+                <input type="text" class="search__inp">
+                <svg width="18" height="18" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2667 21L13.9667 14.7C13.4667 15.1 12.8917 15.4167 12.2417 15.65C11.5917 15.8833 10.9001 16 10.1667 16C8.35008 16 6.81275 15.3707 5.55475 14.112C4.29675 12.8533 3.66741 11.316 3.66675 9.5C3.66675 7.68333 4.29608 6.146 5.55475 4.888C6.81341 3.63 8.35075 3.00067 10.1667 3C11.9834 3 13.5207 3.62933 14.7787 4.888C16.0367 6.14667 16.6661 7.684 16.6667 9.5C16.6667 10.2333 16.5501 10.925 16.3167 11.575C16.0834 12.225 15.7667 12.8 15.3667 13.3L21.6667 19.6L20.2667 21ZM10.1667 14C11.4167 14 12.4794 13.5623 13.3547 12.687C14.2301 11.8117 14.6674 10.7493 14.6667 9.5C14.6667 8.25 14.2291 7.18733 13.3537 6.312C12.4784 5.43667 11.4161 4.99933 10.1667 5C8.91675 5 7.85408 5.43767 6.97875 6.313C6.10341 7.18833 5.66608 8.25067 5.66675 9.5C5.66675 10.75 6.10441 11.8127 6.97975 12.688C7.85508 13.5633 8.91741 14.0007 10.1667 14Z" fill="white"/>
+                </svg>                    
             </div>
         </div>
     </header>
@@ -66,8 +80,10 @@
             <div class="container">
                 <h1 class="pagecrm_crm-title">CRM</h1>
                 <img src="assets/images/webp/block1.webp" alt="" class="pagecrm_crm-img">
-                <button class="pagecrm_crm-btn btn">оставить заявку</button>
+                <a href="#request" class="pagecrm_crm-btn btn">оставить заявку</a>
             </div>
+            <img src="assets/images/webp/lines.webp" alt="" class="lines">
+            <img src="assets/images/webp/line-m.webp" alt="" class="lines_mob">
         </section>
 
         <section class="pagecrm_control">
@@ -143,14 +159,14 @@
                     </div>
                 </div>
 
-                <form class="control-form">
+                <form class="control-form" id="request">
                     <h2 class="form-title">Оставить заявку</h2>
                     <p class="form-subtitle">Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
                     <div class="input-box">
-                        <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                        <input type="text" id="request_name" class="form__inp" placeholder="Ваше имя" required>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="form__inp phone" placeholder="Телефон" required>
+                        <input type="text" id="request_phone" class="form__inp phone" placeholder="Телефон" required>
                     </div>
                     <div class="select-box">
                         <div class="select-head">
@@ -164,7 +180,7 @@
                         </ul>
                     </div>
                     <div class="text-box">
-                        <textarea class="form__text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"></textarea>
+                        <textarea class="form__text" id="request_message" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM" required></textarea>
                     </div>
 
                     <button class="form-btn btn">ОТПРАВИТЬ ЗАЯВКУ</button>
@@ -208,7 +224,7 @@
                             <img src="assets/images/svg/bus1.svg" alt="">
                             <span>г. Санкт-Петербург</span>
                         </div>
-                        <div class="">
+                        <div class="item-info">
                             <p class="item-title">“Пестовский Лесокомбинат”</p>
                             <p class="item-text">Строительная компания</p>
                             <p class="item-subtitle">Работают на платформе amoCRM</p>
@@ -220,7 +236,7 @@
                             <img src="assets/images/svg/bus2.svg" alt="">
                             <span>Россия</span>
                         </div>
-                        <div class="">
+                        <div class="item-info">
                             <p class="item-title">Магазин “Mongol Store”</p>
                             <p class="item-text">Одежда из натуральной шерсти</p>
                             <p class="item-subtitle">Используют БитриксCRM</p>
@@ -294,16 +310,16 @@
         <section class="pagecrm_connection">
             <div class="container">
                 <h2 class="connection__title">Заявка на подбор и подключение CRM-системы </h2>
-                <p class="section__subtitle">Проведем аудит, подготовим решение для вашего <br> бизнеса и рассчитаем стоимость </p>
+                <p class="section__subtitle">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость </p>
                 <div class="connection-box">
                     <form class="connection-form">
                         <h3 class="form-title">Заполните форму</h3>
                         <p class="form-subtitle">Оставьте свои контактные данные, мы свяжемся с Вами в течение 20 минут</p>
                         <div class="input-box">
-                            <input type="text" class="form__inp" placeholder="Ваше имя" required>
+                            <input type="text" id="crm_name" class="form__inp" placeholder="Ваше имя" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" class="form__inp phone" placeholder="Телефон" required>
+                            <input type="text" id="crm_phone" class="form__inp phone" placeholder="Телефон" required>
                         </div>
                         <div class="select-box">
                             <div class="select-head">
@@ -326,7 +342,7 @@
 
         <section class="pagecrm_partner">
             <div class="container">
-                <h2 class="section__title">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+                <h2 class="section__title"><span>НАШ ПАРТНЁР</span> ПО CRM-СИСТЕМАМ</h2>
                 <div class="partner-box">
                     <ul class="partner-item">
                         <li>
@@ -357,16 +373,16 @@
                     </div>
                     <form class="writeUS-form">
                         <div class="input-box">
-                            <input type="text" class="form__inp" placeholder="Имя" required>
+                            <input type="text" id="write_name" class="form__inp" placeholder="Имя" required>
                         </div>
                         <div class="input-box">
-                            <input type="email" class="form__inp" placeholder="@Почта*" required>
+                            <input type="email" id="write_email" class="form__inp" placeholder="@Почта*" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" class="form__inp phone" placeholder="+7(___) ___-__-__*" required>
+                            <input type="text" id="write_phone" class="form__inp phone" placeholder="+7(___) ___-__-__*" required>
                         </div>
                         <div class="text-box">
-                            <textarea class="form__text" placeholder="Задать вопрос"></textarea>
+                            <textarea class="form__text" id="write_message" placeholder="Задать вопрос" required></textarea>
                         </div>
 
                         <button class="form-btn btn">задать вопрос</button>
@@ -412,6 +428,19 @@
                     </div>
                     <div class="footert-map">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa18364c0fa526cff9c5c71ef9127d5907679471007cdf3cd6b2733db23a2d5ff&amp;source=constructor" width="500" height="400"></iframe>
+                    </div>
+                </div>
+                <div class="box_mob">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/images/svg/logo-white.svg" alt="" class="logo-img">
+                    </a>
+                    <div class="socials">
+                        <a href="#" class="social">
+                            <img src="assets/images/svg/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="assets/images/svg/tg.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
